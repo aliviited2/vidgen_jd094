@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aliviited2-vidgen_jd094"
+version = "0.1.0"
+description = "按段落统计文生视频工程师·冷启动与模型加载时间相关的长度分布，标出过长、过短与重复表达的部分"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "aliviited2" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://aliviited2.github.io"
+Repository = "https://github.com/aliviited2/vidgen_jd094"
+Issues = "https://github.com/aliviited2/vidgen_jd094/issues"
+
+[project.scripts]
+vidgen_jd094 = "vidgen_jd094:main"
+
+[tool.setuptools]
+py-modules = ["vidgen_jd094"]
